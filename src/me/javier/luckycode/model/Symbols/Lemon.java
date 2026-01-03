@@ -1,6 +1,6 @@
-package me.javier.luckycode.model;
+package me.javier.luckycode.model.Symbols;
 
-public class Lemon extends Symbol{
+public class Lemon extends Symbol {
     public Lemon() {
         super("Limon", 2,
                 """
