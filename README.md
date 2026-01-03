@@ -42,12 +42,12 @@ LuckyCode/
 │               │
 │               ├── model/                    <-- (DATA AND RULES)
 │               │   ├── Symbols/
-                         ├── Bell.java
-                         ├── Cherry.java
-                         ├── Diamond.java
-                         ├── Lemon.java
-                         ├── Seven.java
-                         ├── Symbol.java
+│               │   │    ├── Bell.java
+│               │   │    ├── Cherry.java
+│               │   │    ├── Diamond.java
+│               │   │    ├── Lemon.java
+│               │   │    ├── Seven.java
+│               │   │    └── Symbol.java
 │               │   ├── Reel
 │               │   └── Player
 │               │
