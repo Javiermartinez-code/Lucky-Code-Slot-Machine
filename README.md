@@ -41,9 +41,15 @@ LuckyCode/
 │               ├── Main.java                 <-- (ENTRY POINT)
 │               │
 │               ├── model/                    <-- (DATA AND RULES)
-│               │   ├── Symbol.java
-│               │   ├── Reel.java
-│               │   └── Player.java
+│               │   ├── Symbols/
+                         ├── Bell.java
+                         ├── Cherry.java
+                         ├── Diamond.java
+                         ├── Lemon.java
+                         ├── Seven.java
+                         ├── Symbol.java
+│               │   ├── Reel
+│               │   └── Player
 │               │
 │               ├── view/                     <-- (USER VIEW)
 │               │   └── ConsolePrinter.java
