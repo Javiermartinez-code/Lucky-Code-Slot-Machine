@@ -33,10 +33,22 @@ This project serves as a deep dive into the core pillars of OOP:
 ## 📁 Project Structure
 
 ```text
-src/
-├── model/
-│   ├── Symbol.java    # Represents icons (Cherry, Bell, 7, etc.)
-│   ├── Reel.java      # Manages the spinning state and randomization
-│   ├── Machine.java   # Core engine: manages reels and prize logic
-│   └── Player.java    # Manages user balance and credentials
-└── Main.java          # Entry point and game loop
+LuckyCode/
+├── src/
+│   └── me/
+│       └── javi/
+│           └── luckycode/
+│               ├── Main.java                 <-- (ENTRY POINT)
+│               │
+│               ├── model/                    <-- (DATA AND RULES)
+│               │   ├── Symbol.java
+│               │   ├── Reel.java
+│               │   └── Player.java
+│               │
+│               ├── view/                     <-- (USER VIEW)
+│               │   └── ConsolePrinter.java
+│               │
+│               └── controller/
+│                   └── GameController.java
+├── README.md
+└── .gitignore
