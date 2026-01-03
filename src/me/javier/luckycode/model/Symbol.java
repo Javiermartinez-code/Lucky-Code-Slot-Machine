@@ -22,4 +22,9 @@ public class Symbol {
     public String getAsciiPresentation() {
         return this.asciiPresentation;
     }
+
+    public boolean sameSymbol(Symbol symbol) {
+        if(symbol == null) return false;
+        return this.name.equals(symbol.getName());
+    }
 }
