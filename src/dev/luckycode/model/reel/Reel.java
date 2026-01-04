@@ -5,6 +5,8 @@ import dev.luckycode.model.symbols.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+public class Reel {
 import java.util.Random;
 
 public class Reel {
@@ -32,6 +34,8 @@ public class Reel {
     }
 
     public Symbol getRandomSymbol() {
+        Collections.shuffle(possibleSymbol);
+        return possibleSymbol.getFirst();
         int randomIndex = rd.nextInt(possibleSymbol.size());
         return possibleSymbol.get(randomIndex);
     }
