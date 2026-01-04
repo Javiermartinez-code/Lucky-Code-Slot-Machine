@@ -1,5 +1,7 @@
 # LuckyCode Slot Machine 🎰
 
+## Beginner Project
+
 A robust, Object-Oriented Programming (OOP) simulation of a classic casino slot machine built with Java. This project focuses on clean architecture, object interaction, and terminal-based animations without using complex data structures like Arrays or Lists.
 
 ## 🚀 Overview
@@ -26,7 +28,6 @@ This project serves as a deep dive into the core pillars of OOP:
 ## 🎮 Key Features
 
 * **Cascade Effect:** Reels stop one by one (Left to Right) with timed delays to build tension.
-* **ASCII Art Interface:** Visual representation of slot symbols directly in the terminal.
 * **Wallet System:** Tracks player balance, stakes, and winnings across sessions.
 * **Custom Probabilities:** Weighted randomization ensures some symbols (like "777") appear less frequently than others (like "Cherry").
 
@@ -41,18 +42,23 @@ LuckyCode/
 │               ├── Main.java                 <-- (ENTRY POINT)
 │               │
 │               ├── model/                    <-- (DATA AND RULES)
-│               │   ├── Symbols/
+│               │   ├── symbols/
 │               │   │    ├── Bell.java
 │               │   │    ├── Cherry.java
 │               │   │    ├── Diamond.java
 │               │   │    ├── Lemon.java
 │               │   │    ├── Seven.java
 │               │   │    └── Symbol.java
-│               │   ├── Reel
-│               │   └── Player
+│               │   ├── reel/
+│               │   │    └── Reel.java
+│               │   ├── player/
+│               │   │    └── Player.java
+│               │   │
+│               │   └── slot_machine/
+│               │         └── SlotMachine.java
 │               │
 │               ├── view/                     <-- (USER VIEW)
-│               │   └── ConsolePrinter.java
+│               │   └── SlotView.java
 │               │
 │               └── controller/
 │                   └── GameController.java
