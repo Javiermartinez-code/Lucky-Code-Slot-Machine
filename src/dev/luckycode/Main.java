@@ -1,5 +1,8 @@
 package dev.luckycode;
 
+public class Main {
+    public static void main(String[] args) {
+
 import dev.luckycode.model.reel.Reel;
 import dev.luckycode.model.symbols.Symbol;
 import dev.luckycode.view.SlotView;
