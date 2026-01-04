@@ -23,5 +23,11 @@ public class Main {
         } catch (InterruptedException e) {
                     System.out.println("Error en la animación.");
         }
+import dev.luckycode.controller.GameController;
+
+public class Main {
+    public static void main(String[] args) {
+        GameController gm = new GameController();
+        gm.start();
     }
 }
