@@ -1,9 +1,8 @@
-package dev.luckycode.model.symbols;
+package dev.luckycode.model;
 
 public class Bell extends Symbol {
     public Bell() {
         super("Campana", 5,
-        super("Campana", 10,
                 """
                            .-"-.  \s
                           /     \\ \s

@@ -1,9 +1,8 @@
-package dev.luckycode.model.symbols;
+package dev.luckycode.model;
 
-public class Lemon extends Symbol {
+public class Lemon extends Symbol{
     public Lemon() {
         super("Limon", 2,
-        super("Limon", 4,
                 """
                              _    \s
                           .-' '-. \s
