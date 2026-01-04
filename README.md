@@ -53,7 +53,6 @@ LuckyCode/
 │               │   │    └── Reel.java
 │               │   ├── player/
 │               │   │    └── Player.java
-│               │   │
 │               │   └── slot_machine/
 │               │         └── SlotMachine.java
 │               │
