@@ -1,6 +1,6 @@
-package me.javier.luckycode;
+package dev.luckycode;
 
-import me.javier.luckycode.controller.GameController;
+import dev.luckycode.controller.GameController;
 
 public class Main {
     public static void main(String[] args) {

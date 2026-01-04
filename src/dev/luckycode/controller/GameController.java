@@ -1,10 +1,10 @@
-package me.javier.luckycode.controller;
+package dev.luckycode.controller;
 
-import me.javier.luckycode.model.player.Player;
-import me.javier.luckycode.model.reel.Reel;
-import me.javier.luckycode.model.slot_machine.SlotMachine;
-import me.javier.luckycode.model.symbols.Symbol;
-import me.javier.luckycode.view.SlotView;
+import dev.luckycode.model.player.Player;
+import dev.luckycode.model.reel.Reel;
+import dev.luckycode.model.slot_machine.SlotMachine;
+import dev.luckycode.model.symbols.Symbol;
+import dev.luckycode.view.SlotView;
 
 import java.util.List;
 import java.util.Scanner;

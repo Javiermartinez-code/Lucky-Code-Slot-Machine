@@ -1,7 +1,7 @@
-package me.javier.luckycode.view;
+package dev.luckycode.view;
 
-import me.javier.luckycode.model.reel.Reel;
-import me.javier.luckycode.model.symbols.Symbol;
+import dev.luckycode.model.reel.Reel;
+import dev.luckycode.model.symbols.Symbol;
 
 import java.util.List;
 

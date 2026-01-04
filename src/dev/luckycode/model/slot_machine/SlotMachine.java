@@ -1,7 +1,7 @@
-package me.javier.luckycode.model.slot_machine;
+package dev.luckycode.model.slot_machine;
 
-import me.javier.luckycode.model.reel.Reel;
-import me.javier.luckycode.model.symbols.Symbol;
+import dev.luckycode.model.reel.Reel;
+import dev.luckycode.model.symbols.Symbol;
 
 import java.util.ArrayList;
 import java.util.List;
