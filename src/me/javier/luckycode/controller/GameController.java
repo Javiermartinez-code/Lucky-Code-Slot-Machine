@@ -1,9 +1,12 @@
 package me.javier.luckycode.controller;
 
 import me.javier.luckycode.model.player.Player;
+import me.javier.luckycode.model.reel.Reel;
 import me.javier.luckycode.model.slot_machine.SlotMachine;
+import me.javier.luckycode.model.symbols.Symbol;
 import me.javier.luckycode.view.SlotView;
 
+import java.util.List;
 import java.util.Scanner;
 import java.util.SequencedCollection;
 
@@ -54,7 +57,7 @@ public class GameController {
                 sc.nextLine();
 
                 if (amountUser > 0 && amountUser <= saldoUser) {
-                    this.playTurn();
+                    this.playTurn(amountUser);
                 } else if (amountUser < 0 || amountUser > saldoUser) {
                     System.out.print("Error! Debes introducir una cantidad válida");
                 }
@@ -71,7 +74,33 @@ public class GameController {
         }
     }
 
-    public void playTurn() {
+    public void playTurn(int bet) {
+       if (player.substractBalance(bet)) {
+           List<Symbol> result = slotMachine.spin();
+           List<Reel> activeReels = slotMachine.getReels();
 
+           try {
+               for (int i = 0; i < result.size(); i++) {
+                   slotView.drawCascade(activeReels.get(i), result.get(i));
+               }
+           } catch (InterruptedException e) {
+               throw new RuntimeException(e);
+           }
+
+           this.processResult(result, bet);
+       } else {
+           System.out.println("No tienes suficiente saldo para esta apuesta.");
+       }
+    }
+
+    private void processResult(List<Symbol> result, int amount) {
+        int prize = slotMachine.calculatePrize(result, amount);
+
+        if (prize > 0) {
+            player.addBalance(prize);
+            System.out.println("Enhorabuena!! Has ganado " + prize + "€");
+        } else {
+            System.out.println("Lo siento!! No ha habido suerte esta vez.");
+        }
     }
 }
