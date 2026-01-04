@@ -2,12 +2,6 @@ package dev.luckycode.model.symbols;
 
 public class Seven extends Symbol {
     public Seven() {
-        super("Siete", 20, """
-        super("Siete", 40, """
-                  ________
-                 |___    /
-                    /   /\s
-                   /   / \s
-                  /___/""");
+        super("Siete", 20);
     }
 }

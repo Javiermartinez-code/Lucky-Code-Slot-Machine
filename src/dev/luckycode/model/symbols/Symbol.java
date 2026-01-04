@@ -3,12 +3,10 @@ package dev.luckycode.model.symbols;
 public class Symbol {
     private String name;
     private int scoreValue;
-    private String asciiPresentation;
 
-    public Symbol(String name, int scoreValue, String asciiPresentation) {
+    public Symbol(String name, int scoreValue) {
         this.name = name;
         this.scoreValue = scoreValue;
-        this.asciiPresentation = asciiPresentation;
     }
 
     public String getName() {
@@ -17,10 +15,6 @@ public class Symbol {
 
     public int getScoreValue() {
         return this.scoreValue;
-    }
-
-    public String getAsciiPresentation() {
-        return this.asciiPresentation;
     }
 
     public boolean sameSymbol(Symbol symbol) {
