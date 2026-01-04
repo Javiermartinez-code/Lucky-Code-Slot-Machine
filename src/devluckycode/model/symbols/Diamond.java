@@ -1,4 +1,4 @@
-package me.javier.luckycode.model.symbols;
+package devluckycode.model.symbols;
 
 public class Diamond extends Symbol {
     public Diamond() {

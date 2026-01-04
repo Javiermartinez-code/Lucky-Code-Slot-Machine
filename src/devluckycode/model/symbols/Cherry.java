@@ -1,4 +1,4 @@
-package me.javier.luckycode.model.symbols;
+package devluckycode.model.symbols;
 
 public class Cherry extends Symbol {
     public Cherry() {

@@ -1,6 +1,6 @@
-package me.javier.luckycode.model.reel;
+package devluckycode.model.reel;
 
-import me.javier.luckycode.model.symbols.*;
+import devluckycode.model.symbols.*;
 
 import java.util.ArrayList;
 import java.util.Collections;

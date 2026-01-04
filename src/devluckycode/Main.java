@@ -1,6 +1,4 @@
-package me.javier.luckycode;
-
-import me.javier.luckycode.model.*;
+package devluckycode;
 
 public class Main {
     public static void main(String[] args) {

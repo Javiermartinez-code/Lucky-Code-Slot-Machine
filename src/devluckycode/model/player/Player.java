@@ -1,4 +1,4 @@
-package me.javier.luckycode.model.player;
+package devluckycode.model.player;
 
 public class Player {
     private String name;
