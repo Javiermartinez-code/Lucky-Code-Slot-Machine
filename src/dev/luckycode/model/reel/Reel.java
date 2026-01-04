@@ -1,7 +1,6 @@
 package dev.luckycode.model.reel;
 
 import dev.luckycode.model.symbols.*;
-import me.javier.luckycode.model.symbols.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
