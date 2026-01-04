@@ -1,4 +1,4 @@
-package me.javier.luckycode.model;
+package dev.luckycode.model;
 
 public class Symbol {
     private String name;

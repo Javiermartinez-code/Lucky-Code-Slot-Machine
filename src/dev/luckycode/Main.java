@@ -1,4 +1,4 @@
-package me.javier.luckycode;
+package dev.luckycode;
 
 import me.javier.luckycode.model.*;
 
