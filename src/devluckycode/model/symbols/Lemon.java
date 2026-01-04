@@ -1,0 +1,14 @@
+package devluckycode.model.symbols;
+
+public class Lemon extends Symbol {
+    public Lemon() {
+        super("Limon", 2,
+                """
+                             _    \s
+                          .-' '-. \s
+                         <       >\s
+                          '-._.-'  \
+                        """
+        );
+    }
+}
