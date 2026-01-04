@@ -1,4 +1,4 @@
-package me.javier.luckycode.model.symbols;
+package dev.luckycode.model.symbols;
 
 public class Bell extends Symbol {
     public Bell() {
