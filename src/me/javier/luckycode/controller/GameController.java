@@ -8,7 +8,6 @@ import me.javier.luckycode.view.SlotView;
 
 import java.util.List;
 import java.util.Scanner;
-import java.util.SequencedCollection;
 
 public class GameController {
     private SlotMachine slotMachine;
@@ -46,9 +45,9 @@ public class GameController {
 
     public void start() {
         int amountUser = -1;
-        int saldoUser = player.getSaldo();
 
         do {
+            int saldoUser = player.getSaldo();
             System.out.println("Tienes " + saldoUser + "€ de saldo actualmente.");
             System.out.print("Introduzca la cantidad de dinero que quieres apostar (0 - para salir): ");
 
@@ -66,6 +65,12 @@ public class GameController {
                 sc.nextLine();
                 amountUser = -1;
             }
+
+            if (player.getSaldo() <= 0) {
+                System.out.println("Te has quedado sin un puto duro.");
+                System.out.println("Saliendo...");
+                System.exit(0);
+            }
         } while(amountUser != 0);
 
         if (amountUser == 0) {
@@ -80,9 +85,8 @@ public class GameController {
            List<Reel> activeReels = slotMachine.getReels();
 
            try {
-               for (int i = 0; i < result.size(); i++) {
-                   slotView.drawCascade(activeReels.get(i), result.get(i));
-               }
+               slotView.drawHorizontalSpin(activeReels, result);
+               System.out.println();
            } catch (InterruptedException e) {
                throw new RuntimeException(e);
            }

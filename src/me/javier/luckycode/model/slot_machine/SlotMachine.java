@@ -36,16 +36,19 @@ public class SlotMachine {
     }
 
     public int calculatePrize(List<Symbol> results, int amount) {
-        String first = results.getFirst().getName();
-        String second = results.get(1).getName();
-        String third = results.get(2).getName();
+        Symbol first = results.getFirst();
+        Symbol second = results.get(1);
+        Symbol third = results.get(2);
 
         if (checkWin(results)) {
             int multiplier = results.getFirst().getScoreValue();
             return amount * multiplier;
-        } else if (first.equals(second) || second.equals(third)) {
-            int multiplier = results.getFirst().getScoreValue();
-            return amount * multiplier / 2;
+        } else if (first.getName().equals(second.getName())) {
+            int multiplier = first.getScoreValue();
+            return (amount * multiplier) / 2;
+        } else if (second.getName().equals(third.getName())) {
+            int multiplier = second.getScoreValue();
+            return (amount * multiplier) / 2;
         }
 
         return 0;
