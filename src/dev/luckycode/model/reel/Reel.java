@@ -7,6 +7,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class Reel {
+import java.util.Random;
+
+public class Reel {
+    Random rd = new Random();
     private List<Symbol> possibleSymbol;
 
     public Reel() {
@@ -32,5 +36,7 @@ public class Reel {
     public Symbol getRandomSymbol() {
         Collections.shuffle(possibleSymbol);
         return possibleSymbol.getFirst();
+        int randomIndex = rd.nextInt(possibleSymbol.size());
+        return possibleSymbol.get(randomIndex);
     }
 }

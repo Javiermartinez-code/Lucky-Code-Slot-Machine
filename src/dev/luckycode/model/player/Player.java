@@ -23,4 +23,8 @@ public class Player {
             return true;
         }
     }
+
+    public int getSaldo() {
+        return this.saldo;
+    }
 }
