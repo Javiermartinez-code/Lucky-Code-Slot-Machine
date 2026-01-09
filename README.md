@@ -36,30 +36,29 @@ This project serves as a deep dive into the core pillars of OOP:
 ```text
 LuckyCode/
 ├── src/
-│   └── me/
-│       └── javi/
-│           └── luckycode/
-│               ├── Main.java                 <-- (ENTRY POINT)
-│               │
-│               ├── model/                    <-- (DATA AND RULES)
-│               │   ├── symbols/
-│               │   │    ├── Bell.java
-│               │   │    ├── Cherry.java
-│               │   │    ├── Diamond.java
-│               │   │    ├── Lemon.java
-│               │   │    ├── Seven.java
-│               │   │    └── Symbol.java
-│               │   ├── reel/
-│               │   │    └── Reel.java
-│               │   ├── player/
-│               │   │    └── Player.java
-│               │   └── slot_machine/
-│               │         └── SlotMachine.java
-│               │
-│               ├── view/                     <-- (USER VIEW)
-│               │   └── SlotView.java
-│               │
-│               └── controller/
-│                   └── GameController.java
+│   └── dev/
+│        └── luckycode/
+│             ├── Main.java                 <-- (ENTRY POINT)
+│             │
+│             ├── model/                    <-- (DATA AND RULES)
+│             │    ├── symbols/
+│             │    │    ├── Bell.java
+│             │    │    ├── Cherry.java
+│             │    │    ├── Diamond.java
+│             │    │    ├── Lemon.java
+│             │    │    ├── Seven.java
+│             │    │    └── Symbol.java
+│             │    ├── reel/
+│             │    │    └── Reel.java
+│             │    ├── player/
+│             │    │    └── Player.java
+│             │    └── slot_machine/
+│             │         └── SlotMachine.java
+│             │
+│             ├── view/                     <-- (USER VIEW)
+│             │    └── SlotView.java
+│             │
+│             └── controller/
+│                  └── GameController.java
 ├── README.md
 └── .gitignore
